@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cu-ado.iml" filepath="$PROJECT_DIR$/.idea/cu-ado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cu-ado_main.iml" filepath="$PROJECT_DIR$/.idea/modules/cu-ado_main.iml" group="cu-ado" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cu-ado_test.iml" filepath="$PROJECT_DIR$/.idea/modules/cu-ado_test.iml" group="cu-ado" />
     </modules>
   </component>
 </project>
