@@ -4,6 +4,7 @@ import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.index.CompoundIndexes;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
@@ -14,7 +15,7 @@ import java.util.Map;
 public class Category {
     private Map<Locale, String> name;
     private Long categoryId;
-    private Category childCategory;
+    private List<Category> childCategory;
 
     public Map<Locale, String> getName() {
         return name;
@@ -32,11 +33,11 @@ public class Category {
         this.categoryId = categoryId;
     }
 
-    public Category getChildCategory() {
+    public List<Category> getChildCategory() {
         return childCategory;
     }
 
-    public void setChildCategory(Category childCategory) {
+    public void setChildCategory(List<Category> childCategory) {
         this.childCategory = childCategory;
     }
 

@@ -2,6 +2,7 @@ package com.presupuestos.presupuestos.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
@@ -10,7 +11,7 @@ public class Door {
 
     private Long doorId;
     private Map<Locale, String> name;
-    private Category category;
+    private List<Category> category;
     private Double price;
     private Integer number;
 
@@ -30,11 +31,11 @@ public class Door {
         this.name = name;
     }
 
-    public Category getCategory() {
+    public List<Category> getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(List<Category> category) {
         this.category = category;
     }
 
@@ -54,7 +55,7 @@ public class Door {
         this.number = number;
     }
 
-    public Door(Long doorId, Map<Locale, String> name, Category category, Double price) {
+    public Door(Long doorId, Map<Locale, String> name, List<Category> category, Double price) {
         this.doorId = doorId;
         this.name = name;
         this.category = category;
